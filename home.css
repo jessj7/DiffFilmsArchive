@@ -1,0 +1,173 @@
+body {
+  margin: 0%;
+  background-image:url(homebackground.png);
+}
+#container{
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: #A6ACBF;
+  vertical-align: middle;
+  height: 75px;
+  z-index: 800;
+}
+    /* aligning gets rid of white gap between the nav bar and following items*/
+
+
+
+.menu li{
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  width: 18%;
+  text-align: center;
+  background-color: #A6ACBF;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin: 0%;
+  font-family: helvetica, arial;
+  font-size: 1.5em;
+  line-height: 75px;
+}
+.FullLogo{
+  display: inline;
+  width: 18%;
+  float: left;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 75px;
+  width: auto;
+}
+.MobileLogo{
+  display:none;
+}
+.menu li a{
+  text-decoration: none;
+  color: black;
+}
+.menu li:hover {
+  background-color: #32A54C;
+}
+
+@media(max-width: 1078px) {
+  .FullLogo{
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 5%;
+    width: 90%;
+    height: auto;
+    display: block;
+    }
+  .Logo {
+    height: 75px;
+    /*This keeps the logo changing colour on hover*/
+  }
+}
+@media (max-width: 700px) {
+
+
+  .menu{
+    width: 100%;
+  }
+  .FullLogo{
+    display: none;
+  }
+  .MobileLogo{
+    display: inline;
+    width: 18%;
+    float: left;
+    height: 74px;
+    width: auto;
+    padding: 1%;
+    z-index: 999;
+  }
+  .Hamburger{
+    display: block;
+    float: right;
+    height: 74px;
+    padding: 1%;
+
+  }
+  li{
+    width: 50%;
+    font-size: 0.25em;
+  }
+
+}
+@media (max-width: 500px) {
+  .menu li{
+    font-size: 1em;}
+
+}
+/*This is the end of header code*/
+#Block{
+  padding-top: 80px;
+  position: absolute;
+}
+.Title{
+
+}
+.Title h1{
+  color: #166E25;
+  font-family: helvetica, arial;
+  float: left;
+  font-size: 7em;
+  margin: 0%;
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-shadow: 1px 1px 3px #000000;
+}
+.Title p{
+  color: #A6ACBF;
+  font-family: helvetica, arial;
+  float: left;
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-left: 19%;
+  margin-right: 19%;
+  text-align: justify;
+}
+.DiffFilmsLogo{
+  margin-left: 43%;
+  margin-right: 43%;
+  max-width: 14%;
+  max-height: auto;
+}
+//* Media queries only after here, changed whenever neccessary*//
+@media (max-width: 930px) {
+  .Title h1{
+    font-size: 6em;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .Title p{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 5%;
+  }
+}
+@media (max-width: 680px) {
+  .Title h1{
+    font-size: 5em;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .Title p{
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+@media (max-width: 680px) {
+  .Title h1{
+    font-size: 4em;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .Title p{
+    font-size: 1em;
+  }
+}

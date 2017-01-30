@@ -1,0 +1,382 @@
+body {
+  margin: 0%;
+  background-color: black;
+}
+#container{
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: #A6ACBF;
+  vertical-align: middle;
+  height: 75px;
+  z-index: 800;
+}
+    /* aligning gets rid of white gap between the nav bar and following items*/
+
+
+
+.menu li{
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  width: 18%;
+  text-align: center;
+  background-color: #A6ACBF;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin: 0%;
+  font-family: helvetica, arial;
+  font-size: 1.5em;
+  line-height: 75px;
+}
+.FullLogo{
+  display: inline;
+  width: 18%;
+  float: left;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 75px;
+  width: auto;
+}
+.MobileLogo{
+  display:none;
+}
+.menu li a{
+  text-decoration: none;
+  color: black;
+}
+
+.active li{
+  background-color: #A33329;
+}
+.menu li:hover {
+  background-color: #A33329;
+}
+//* Media queries only after here, changed whenever neccessary*//
+@media(max-width: 1078px) {
+  .FullLogo{
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 5%;
+    width: 90%;
+    height: auto;
+    display: block;
+    }
+  .Logo {
+    height: 75px;
+    /*This keeps the logo changing colour on hover*/
+  }
+}
+@media (max-width: 700px) {
+
+
+  .menu{
+    width: 100%;
+  }
+  .FullLogo{
+    display: none;
+  }
+  .MobileLogo{
+    display: inline;
+    width: 18%;
+    float: left;
+    height: 74px;
+    width: auto;
+    padding: 1%;
+    z-index: 999;
+  }
+  .Hamburger{
+    display: block;
+    float: right;
+    height: 74px;
+    padding: 1%;
+
+  }
+  li{
+    width: 50%;
+    font-size: 0.25em;
+  }
+
+}
+@media (max-width: 500px) {
+  .menu li{
+    font-size: 1em;}
+
+}
+
+/*This is the end of header code*/
+
+.DarkRoomPic{
+  top: 50%;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  padding-top: 75px;
+}
+.DarkRoomPicMobile{
+  display: none;
+}
+
+h1{
+  position: absolute;
+  font-family: helvetica, arial;
+  float: left;
+  background-color: #000000;
+  color: #A33329;
+  top: 20%;
+  opacity: 0.8;
+  font-size: 6em;
+  z-index: 400;
+}
+h1 a{
+  text-decoration: none;
+  color: #A33329;
+}
+h1:hover{
+  opacity: 1;
+}
+.Info {font-family: helvetica, arial;
+  background-color: #000000;
+  float: left;
+  color: #A33329;
+  position: absolute;
+  font-size: 2em;
+  top: 80%;
+  opacity: 0.8;
+  font-family: helvetica, arial;
+  z-index: 400;
+  }
+@media (max-width: 814px) {
+  h1{
+    font-size: 4em;
+    top: 15%;
+  }
+  .Info {
+    font-size: 1.5em;
+    top: 38%;
+  }
+}
+#subpictures{
+  display: inline-block;
+}
+h2 {
+  position: absolute;
+  font-family: helvetica, arial;
+  float: left;
+  background-color: #000000;
+  color: #A33329;
+  opacity: 0.8;
+  font-size: 3em;
+  z-index: 600;
+}
+h2 a{
+  text-decoration: none;
+  color: #A33329;
+}
+h2:hover{
+  opacity: 1;
+}
+.ElysiumFields {
+  width: 50%;
+}
+
+.ElysiumFieldsPic{
+  width: 100%;
+  float: left;
+  position: relative;
+  vertical-align: bottom;
+  z-index: 600;
+}
+.ElysiumFieldsMobilePic{
+  display: none;
+}
+.ElysiumFieldsInfo{
+  font-size: 1em;
+  font-family: helvetica, arial;
+  background-color: #000000;
+  float: left;
+  color: #A33329;
+  position:absolute;
+  opacity: 0.8;
+  top: 140%;
+  z-index: 600;
+}
+.DarkPlaces{
+  width: 100%;
+}
+.DarkPlacesPic{
+  width: 50%;
+  float: left;
+  position: relative;
+  vertical-align: middle;
+  z-index: 400;
+}
+.DarkPlacesMobilePic{
+  display: none;
+}
+.DarkPlacesTitle{
+    padding-left: 50%;
+    top: auto;
+    z-index: 400;
+  }
+.DarkPlacesInfo{
+  font-size: 1em;
+  font-family: helvetica, arial;
+  background-color: #000000;
+  float: left;
+  color: #A33329;
+  position:absolute;
+  opacity: 0.8;
+  padding-left: 50%;
+  top: 140%;
+  z-index: 450;
+}
+@media (max-width:1100px) {
+  .Info{
+    top: 50%;
+  }
+  .ElysiumFieldsInfo{
+    top: 120%;
+  }
+  .DarkPlacesInfo{
+    top: 120%;
+  }
+}
+@media (max-width:900px) {
+  #subpictures{
+    display:block;
+  }
+  .ElysiumFields{
+    width: 100%
+  }
+  .DarkPlaces{
+    width: 100%
+  }
+  .DarkPlacesInfo{
+    padding-left: 0%;
+    position: absolute;
+    top: 185%;
+  }
+  .DarkPlacesPic{
+    width: 100%;
+  }
+  .DarkPlacesTitle{
+    padding-left: 0%;
+    top: 160%;
+    position: absolute;
+  }
+}
+@media (max-width: 730px) {
+  .DarkPlacesTitle{
+    top: 130%;
+  }
+  .DarkPlacesInfo{
+    top: 155%;
+  }
+  .ElysiumFieldsInfo{
+    top: 100%;
+  }
+  .Info{
+    font-size: 1em;
+  }
+
+}
+@media (max-width: 600px) {
+  .DarkRoomPic{
+    display: none;
+  }
+  .DarkRoomPicMobile{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    padding-top: 75px;
+  }
+  h1{
+    font-size: 3em;
+    top: 14%;
+  }
+  .Info{
+    font-size: 1.5em;
+  }
+  .DarkPlacesTitle{
+    top: 153%;
+  }
+  .DarkPlacesInfo{
+    top: 177%;
+  }
+  .ElysiumFieldsInfo{
+    top: 130%;
+  }
+
+}
+@media (max-width: 546px) {
+  .DarkPlacesTitle{
+    font-size: 1em;
+    top: 138%;
+  }
+  .DarkPlacesInfo{
+    top: 163%;
+  }
+  .ElysiumFieldsTitle{
+    font-size: 1em;
+  }
+  .ElysiumFieldsInfo{
+    top: 115%;
+  }
+}
+@media (max-width: 500px) {
+  .DarkPlacesTitle{
+    font-size: 0.75em;
+    top: 158%;
+  }
+  .DarkPlacesInfo{
+    top: 183%;
+  }
+  .DarkPlacesPic{
+    display: none;
+  }
+  .DarkPlacesMobilePic{
+    display: block;
+    width: 100%;
+  }
+  .ElysiumFieldsTitle h2{
+    top: 90%;
+
+  }
+  .ElysiumFieldsInfo{
+    top: 110%;
+  }
+  .ElysiumFieldsPic{
+    display: none;
+  }
+  .ElysiumFieldsMobilePic{
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 430px) {
+  .Info{
+    font-size: 1em;
+    top: 40%;
+  }
+  .ElysiumFieldsTitle h2{
+    top: 73%;
+
+  }
+  .ElysiumFieldsInfo{
+    top: 90%;
+  }
+  .DarkPlacesTitle{
+    font-size: 0.75em;
+    top: 135%;
+  }
+  .DarkPlacesInfo{
+    top: 153%;
+  }
+}

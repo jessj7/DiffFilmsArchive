@@ -1,0 +1,377 @@
+body {
+  margin: 0%;
+  background-color: black;
+}
+#container{
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: #A6ACBF;
+  vertical-align: middle;
+  height: 75px;
+  z-index: 800;
+}
+    /* aligning gets rid of white gap between the nav bar and following items*/
+
+
+
+.menu li{
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  width: 18%;
+  text-align: center;
+  background-color: #A6ACBF;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin: 0%;
+  font-family: helvetica, arial;
+  font-size: 1.5em;
+  line-height: 75px;
+}
+.FullLogo{
+  display: inline;
+  width: 18%;
+  float: left;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 75px;
+  width: auto;
+}
+.MobileLogo{
+  display:none;
+}
+.menu li a{
+  text-decoration: none;
+  color: black;
+}
+
+.active li{
+  background-color: #D899D6;
+}
+.menu li:hover {
+  background-color: #D899D6;
+}
+
+//* Media queries only after here, changed whenever neccessary*//
+@media(max-width: 1078px) {
+  .FullLogo{
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 5%;
+    width: 90%;
+    height: auto;
+    display: block;
+    }
+  .Logo {
+    height: 75px;
+    /*This keeps the logo changing colour on hover*/
+  }
+}
+@media (max-width: 700px) {
+
+
+  .menu{
+    width: 100%;
+  }
+  .FullLogo{
+    display: none;
+  }
+  .MobileLogo{
+    display: inline;
+    width: 18%;
+    float: left;
+    height: 74px;
+    width: auto;
+    padding: 1%;
+    z-index: 999;
+  }
+  li{
+    width: 50%;
+    font-size: 0.25em;
+  }
+
+}
+@media (max-width: 500px) {
+  .menu li{
+    font-size: 1em;}
+
+}
+
+/*This is the end of header code*/
+
+.ForeverPic{
+  top: 50%;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  padding-top: 75px;
+}
+.ForeverPicMobile{
+  display: none;
+}
+
+h1{
+  position: absolute;
+  font-family: helvetica, arial;
+  float: left;
+  background-color: #000000;
+  color: #D899D6;
+  top: 20%;
+  opacity: 0.6;
+  font-size: 6em;
+  z-index: 400;
+}
+h1 a{
+  text-decoration: none;
+  color: #D899D6;
+}
+h1:hover{
+  opacity: 1;
+}
+.Info {font-family: helvetica, arial;
+  background-color: #000000;
+  float: left;
+  color: #D899D6;
+  position: absolute;
+  font-size: 2em;
+  top: 80%;
+  opacity: 0.6;
+  font-family: helvetica, arial;
+  z-index: 400;
+  }
+#subpictures{
+  display: inline-block;
+}
+h2 {
+  position: absolute;
+  font-family: helvetica, arial;
+  float: left;
+  background-color: #000000;
+  color: #D899D6;
+  opacity: 0.6;
+  font-size: 3em;
+  z-index: 600;
+}
+h2 a{
+  text-decoration: none;
+  color: #D899D6;
+}
+h2:hover{
+  opacity: 1;
+}
+.RailSleeper {
+  width: 50%;
+}
+
+.RailSleeperPic{
+  width: 100%;
+  float: left;
+  position: relative;
+  vertical-align: bottom;
+  z-index: 600;
+}
+.RailSleeperMobilePic{
+  display: none;
+}
+.RailSleeperInfo{
+  font-size: 1em;
+  font-family: helvetica, arial;
+  background-color: #000000;
+  float: left;
+  color: #D899D6;
+  position:absolute;
+  opacity: 0.6;
+  top: 140%;
+  z-index: 600;
+}
+.OhBalls{
+  width: 100%;
+}
+.OhBallsPic{
+  width: 50%;
+  float: left;
+  position: relative;
+  vertical-align: middle;
+  z-index: 400;
+}
+.OhBallsMobilePic{
+  display: none;
+}
+.OhBallsTitle{
+    padding-left: 50%;
+    top: auto;
+    z-index: 400;
+  }
+.OhBallsInfo{
+  font-size: 1em;
+  font-family: helvetica, arial;
+  background-color: #000000;
+  float: left;
+  color: #D899D6;
+  position:absolute;
+  opacity: 0.6;
+  padding-left: 50%;
+  top: 140%;
+  z-index: 450;
+}
+/* This is the start of media queries, I have scaled and changed whenever needed*/
+@media (max-width:1100px) {
+  .Info{
+    top: 50%;
+  }
+  .RailSleeperInfo{
+    top: 120%;
+  }
+  .OhBallsInfo{
+    top: 120%;
+  }
+}
+@media (max-width:900px) {
+  #subpictures{
+    display:block;
+  }
+  .RailSleeper{
+    width: 100%
+  }
+  .OhBalls{
+    width: 100%
+  }
+  .OhBallsInfo{
+    padding-left: 0%;
+    position: absolute;
+    top: 185%;
+  }
+  .OhBallsPic{
+    width: 100%;
+  }
+  .OhBallsTitle{
+    padding-left: 0%;
+    top: 160%;
+    position: absolute;
+  }
+}
+@media (max-width: 814px) {
+  h1{
+    font-size: 4em;
+    top: 15%;
+  }
+  .Info {
+    font-size: 1.5em;
+    top: 38%;
+  }
+}
+@media (max-width: 730px) {
+  .OhBallsTitle{
+    top: 130%;
+  }
+  .OhBallsInfo{
+    top: 155%;
+  }
+  .RailSleeperInfo{
+    top: 100%;
+  }
+  .Info{
+    font-size: 1em;
+  }
+
+}
+@media (max-width: 600px) {
+  .ForeverPic{
+    display: none;
+  }
+  .ForeverPicMobile{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    padding-top: 75px;
+  }
+  h1{
+    font-size: 3em;
+    top: 14%;
+  }
+  .Info{
+    font-size: 1.5em;
+  }
+  .OhBallsTitle{
+    top: 153%;
+  }
+  .OhBallsInfo{
+    top: 177%;
+  }
+  .RailSleeperInfo{
+    top: 130%;
+  }
+
+}
+@media (max-width: 546px) {
+  .OhBallsTitle{
+    font-size: 1em;
+    top: 138%;
+  }
+  .OhBallsInfo{
+    top: 163%;
+  }
+  .RailSleeperTitle{
+    font-size: 1em;
+  }
+  .RailSleeperInfo{
+    top: 115%;
+  }
+}
+@media (max-width: 500px) {
+  .OhBallsTitle{
+    font-size: 0.75em;
+    top: 158%;
+  }
+  .OhBallsInfo{
+    top: 183%;
+  }
+  .OhBallsPic{
+    display: none;
+  }
+  .OhBallsMobilePic{
+    display: block;
+    width: 100%;
+  }
+  .RailSleeperTitle h2{
+    top: 90%;
+
+  }
+  .RailSleeperInfo{
+    top: 110%;
+  }
+  .RailSleeperPic{
+    display: none;
+  }
+  .RailSleeperMobilePic{
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 430px) {
+  .Info{
+    font-size: 1em;
+    top: 40%;
+  }
+  .RailSleeperTitle h2{
+    top: 73%;
+
+  }
+  .RailSleeperInfo{
+    top: 90%;
+  }
+  .OhBallsTitle{
+    font-size: 0.75em;
+    top: 135%;
+  }
+  .OhBallsInfo{
+    top: 153%;
+  }
+}
